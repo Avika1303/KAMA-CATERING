@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: rgb(215, 52, 15) ;
+  color: rgb(245, 242, 240);
+  padding: 10px 0;
+  text-align: center;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(242, 238, 234);
+  text-decoration: wavy;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+#home {
+  background-color: #e2e2e2;
+}
+
+#services, #menu, #contact {
+  background-color: #fff;
+}
+
+h2 {
+  color: #4c0e13;
+  font-size:70px;
+  margin-bottom: 20px;
+  font-family: freestyle script;
+}
+
+p {
+  color: #555;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+button a {
+  color: rgb(244, 122, 108);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+.service-list, .menu-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service, .menu-item {
+  width: 30%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.menu-item h3, .service h3 {
+  color: #333;
+}
+
+.menu-image, .main-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #444;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+      display: block;
+      margin: 10px 0;
+  }
+
+  .menu-item {
+      width: 80%;
+  }
+
+  .menu-image {
+      max-width: 250px;
+  }
+}
